@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Hello World!";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        @using (Html.BeginForm("BasicHttp", "Home"))
+        {
+            <input type="submit" value="Basic Http Request" />
+        }
+    </div>
+    <div class="col-md-4">
+        @using (Html.BeginForm("NetTcp", "Home"))
+        {
+            <input type="submit" value="Basic net.Tcp Request" />
+        }
+    </div>
+</div>
